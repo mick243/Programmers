@@ -6,7 +6,7 @@
 ## Detail
 ```javascript
 {
-  "curremtAsset" : 1000000,
+  "currentAsset" : 1000000,
 }
 
 {
