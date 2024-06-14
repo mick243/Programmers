@@ -22,3 +22,38 @@ export function initStore(){
         store.todayId = todayId;
         store.isFirstEdit = isFirstEdit;
 }
+
+export function addNewHistory(newHistory) {
+  try {
+    // TODO:
+    /**
+     * - store의 detailList 새로 갱신
+     * - store.currentFunds 새로 갱신
+     */
+    store.detailList = null;
+    store.currentFunds = null;
+
+    updateStorage();
+    return true;
+  } catch (error) {
+    alert(error);
+    return false;
+  }
+}
+
+export function removeHistory(dateId, itemId) {
+  try {
+    // TODO:
+    /**
+     * - store의 detailList 새로 갱신
+     * - store.currentFunds 새로 갱신
+     */
+    store.detailList[dateId] = null;
+
+    updateStorage();
+    return true;
+  } catch (error) {
+    alert(error);
+    return false;
+  }
+}
